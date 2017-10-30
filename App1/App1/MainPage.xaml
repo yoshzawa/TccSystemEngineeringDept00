@@ -5,9 +5,14 @@
              x:Class="App1.MainPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
+            <Button Text="We are live in future world!"
                 VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+                HorizontalOptions="CenterAndExpand"
+                    Clicked="Button_Clicked"/>
+            <Button Text="Ahhhh! It's Haloween!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand"
+                    Clicked="Button1_Clicked" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

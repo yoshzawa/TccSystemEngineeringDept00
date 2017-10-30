@@ -13,5 +13,16 @@ namespace App1
 		{
 			InitializeComponent();
 		}
-	}
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            Uri youtube = new Uri("https://youtu.be/HYa39iXSt5E");
+            Device.OpenUri(youtube);
+        }
+        private void Button1_Clicked(object sender, EventArgs e)
+        {
+            Uri youtube = new Uri("https://youtu.be/ul389fICHtg");
+            Device.OpenUri(youtube);
+        }
+    }
 }
