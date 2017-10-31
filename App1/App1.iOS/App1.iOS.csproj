@@ -37,6 +37,9 @@
     <MtouchLink>None</MtouchLink>
     <MtouchArch>i386, x86_64</MtouchArch>
     <ConsolePause>false</ConsolePause>
+    <OptimizePNGs>true</OptimizePNGs>
+    <MtouchFastDev>true</MtouchFastDev>
+    <MtouchDebug>false</MtouchDebug>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
     <DebugSymbols>true</DebugSymbols>
@@ -87,6 +90,14 @@
     <CodesignProvision>Automatic:AppStore</CodesignProvision>
     <CodesignKey>iPhone Distribution</CodesignKey>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchFastDev>true</MtouchFastDev>
+    <OptimizePNGs>false</OptimizePNGs>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Default' ">
+    <AppExtensionDebugBundleId />
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>App1.iOS.Application</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
